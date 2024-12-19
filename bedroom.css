@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: rgba(0, 0, 0); /* Black background with 85% opacity */
+    color: #fff; /* Default text color to white */
+}
+body{
+    background: url('images/bedroom.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.navbar {
+    padding: 20px 0;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(51, 51, 51, 0.5); 
+    z-index:10;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+    list-style:none;
+    display:inline-block;
+    position:relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.navbar ul li::after{
+    content: '';
+    height:3px;
+    width:0%;
+    background:#009688;
+    position:absolute;
+    left:0;
+    bottom: -10px;
+    transition:0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%  
+}
+.content {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: rgba(34, 34, 34, 0.8);
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #fff; 
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+

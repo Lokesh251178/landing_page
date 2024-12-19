@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Interior</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bedroom.css">
+    <link rel="stylesheet" href="dining.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="images/logo.jpg" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="bedroom.html">Bedroom</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="#">Kitchen</a></li>
+                <li><a href="#">Backyard</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h1>Design Your House</h1>
+            <p>We transform your spaces into reflections of your unique style. <br>Our expert designers collaborate with you to create stunning, functional interiors tailored to your vision. <br>Explore and start your journey to a dream home today!</p>
+            <div>
+                <button id="exploreButton" type="button"><span></span>Explore</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('exploreButton').addEventListener('click', function() {
+            window.location.href = 'bedroom.html'; // Navigate to bedroom.html
+        });
+    </script>
+</body>
+</html>

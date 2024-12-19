@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bedroom Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bedroom.css">
+    <style>
+        /* Add the active button style here */
+        button.active {
+            background: #009688; /* Change background when active */
+            color: #fff; /* Text color */
+            border: 2px solid #00695c; /* Optional: Change border color */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="images/logo.jpg" class="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bedroom.html">Bedroom</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="kitchen.html">Kitchen</a></li>
+            <li><a href="backyard.html">Backyard</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Bedroom Design Ideas</h1>
+        <p>Explore our collection of stunning bedroom designs to inspire your next project!</p>
+        <div>
+            <button type="button"><span></span>Explore</button>
+        </div>
+    </div>
+    <script>
+        const exploreButton = document.getElementById('exploreButton');
+
+        exploreButton.addEventListener('mousedown', function() {
+            exploreButton.classList.add('active');
+        });
+
+        exploreButton.addEventListener('mouseup', function() {
+            exploreButton.classList.remove('active');
+        });
+
+        exploreButton.addEventListener('mouseleave', function() {
+            exploreButton.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
